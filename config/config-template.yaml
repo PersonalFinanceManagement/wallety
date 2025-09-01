@@ -1,9 +1,20 @@
+app_name: "Wallety"
+
 logging:
   structured-logging: true
+  debuglevel: "deub"
 
 recording:
   database: false
   csv: true
+
+feature-flags:
+  auth: false
+  backup: false
+
+service:
+  port: 8087
+  debug: true
 
 # PSQL/SQLITE configration
 db:
@@ -14,4 +25,5 @@ db:
     sqlite:
       path: "local/db/"
     psql:
-      url:
+      host:
+      port:
