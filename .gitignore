@@ -1,0 +1,9 @@
+
+vendor/
+
+dist/
+
+bin/
+
+config/config.yaml
+config/credentials.yaml

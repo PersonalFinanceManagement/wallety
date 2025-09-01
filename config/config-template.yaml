@@ -1,0 +1,17 @@
+logging:
+  structured-logging: true
+
+recording:
+  database: false
+  csv: true
+
+# PSQL/SQLITE configration
+db:
+  variant: sqlite
+  username: wallety
+  dbname: wallet_store
+  vendor:  
+    sqlite:
+      path: "local/db/"
+    psql:
+      url:
