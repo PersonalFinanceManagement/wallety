@@ -54,10 +54,10 @@ func main() {
 	}
 
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{
-		Level: logLevel,
+		Level:     logLevel,
+		AddSource: true,
 	}))
 	slog.SetDefault(logger)
-
 	logger.Debug("Version 1 of Wallety!\n")
 	logger.Debug("Add your expenses below \n DD-MM-YYYY\tTYPE\tCATEGORY\tMOP\tSOURCE\tDESCRIPTION\n")
 
